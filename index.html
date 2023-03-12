@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammaraly web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div>
+   
+   </div>
+    <div class="container">
+
+        <h2>Real Time character Counter</h2>
+        <p>Check your English text for grammer, speeling , and punctulation errors 
+            with Google Grammerly App . 
+        </p>
+
+        
+        <grammarly-editor-plugin>
+
+       
+        <textarea id="textarea" 
+         class="textarea"
+          maxlength="150" 
+          placeholder="Please write here"
+          ></textarea>
+
+        <!-- </grammarly-editor-plugin > -->
+
+          <button onclick="copyText()">Copy Text</button>
+
+          <div class="counter-container">
+            <p class="ew">Total character: <span id="total-counter">0</span></p>
+            <p class="sw">Remaining char: <span id="remain-counter">150</span></p>
+          </div>
+        </grammarly-editor-plugin >
+    </div>
+    <!-- <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_YL31hfePR1XFgY95ptn5uX"></script> -->
+    <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_SKLvLHvanJnFV7RtzaCdka"></script>
+    <script src="index.js"></script>
+</body>
+</html>
